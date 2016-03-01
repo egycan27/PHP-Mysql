@@ -1,0 +1,6 @@
+<canvas height="200">
+    <include href="borderedview.lzx"/>
+    <include href="thickborderedview.lzx"/>
+    <thickborderedview x="40" y="40" width="50" 
+            height="50"/>
+</canvas>

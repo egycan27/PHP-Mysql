@@ -1,0 +1,9 @@
+<canvas height="150">
+    <list shownitems="3">
+        <textlistitem>Jazz</textlistitem>
+        <textlistitem>Pop</textlistitem>
+        <textlistitem>Heavy Metal</textlistitem>
+        <textlistitem>Fusion</textlistitem>
+        <textlistitem>Rock</textlistitem>
+    </list>
+</canvas>

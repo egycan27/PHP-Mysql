@@ -1,0 +1,7 @@
+<canvas height="50" fontsize="18">
+    <font src="lztahoe8.ttf" name="tahoe"/>
+    <text font="tahoe">
+        You can use any TTF font 
+        as long as you have the source
+    </text>
+</canvas>

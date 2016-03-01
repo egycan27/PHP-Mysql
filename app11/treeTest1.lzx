@@ -1,0 +1,12 @@
+<canvas width="450" height="250">
+    <include href="../lps/components/lz/tree.lzx"/>
+    <view width="200" height="200">
+        <tree open="true" text="OpenLaszlo Tutorial">
+            <tree text="Chapter 1: Get Started" isleaf="true"/>
+            <tree open="true" text="Chapter 2: First Projects" >
+                <tree text="Section 1: Animation" isleaf="true"/>
+                <tree text="Section 2: Games" isleaf="true"/>
+            </tree>
+        </tree>
+    </view>
+</canvas>

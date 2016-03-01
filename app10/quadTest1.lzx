@@ -1,0 +1,11 @@
+<canvas height="200">
+    <drawview height="200" width="600">
+        <method event="oninit">
+            this.moveTo(200,100);
+            this.quadraticCurveTo(40, 200, 100, 50);
+            this.moveTo(400, 100);
+            this.quadraticCurveTo(40, 200, 300, 50);
+            this.stroke()
+        </method>
+    </drawview>
+</canvas>

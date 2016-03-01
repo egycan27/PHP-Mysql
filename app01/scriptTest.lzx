@@ -1,0 +1,8 @@
+<canvas width="400">
+
+    <view name="v1" width="150" height="100" bgcolor="lime"/>
+    <script>
+        canvas.v1.setAttribute("bgcolor", 0xFF0000);
+    </script>
+</canvas>
+

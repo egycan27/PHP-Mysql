@@ -1,0 +1,6 @@
+<canvas height="200" width="400">
+    <window resizable="true" width="200" height="200">
+        <text>OpenLaszlo is cool!</text>
+
+    </window>
+</canvas>

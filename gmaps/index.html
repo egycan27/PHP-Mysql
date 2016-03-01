@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>LaszloJapan - Google Maps + OpenLaszlo Demo</title>
+<script language="JavaScript1.1" src="/lps-4.0.x/lps/includes/vbembed.js" type="text/javascript">
+</script>
+
+<script src="/lps-4.0.x/lps/includes/embed.js" type="text/javascript">
+</script>
+
+<script src="http://maps.google.co.jp/maps?file=api&v=1&key=ABQIAAAAIgThCNv3JZ4GZTXeVZlXLxTwM0brOpm-All5BF6PoaKBxRWWERT1zOfmjyhFP8UxLMMX1EFUICYGmg" type="text/javascript"></script>
+
+<body>
+    <div id="map" style="width: 500px; height: 400px; float: left"></div>
+
+    <div id="laszloapp" style = "margin:0px">
+    <script type="text/javascript">
+    	// edit lzLPSRoot if you're not using version 4.0.x
+        lzLPSRoot = '/lps-4.0.x';
+        lzCanvasRuntimeVersion = 7 * 1;
+        if (lzCanvasRuntimeVersion == 6) {
+            lzCanvasRuntimeVersion = 6.65;
+        }
+        if (isIE && isWin || detectFlash() >= lzCanvasRuntimeVersion) {
+            lzEmbed({url: 'googlemaps_sample1.lzx.swf'+window.location.search.substring(1), bgcolor: '#ffffff', width: '200', height: '400', id: 'lzapp'}, lzCanvasRuntimeVersion);
+            lzHistEmbed(lzLPSRoot);
+        } else {
+            document.write('This application requires Flash player ' + lzCanvasRuntimeVersion + '. <a href="http://www.macromedia.com/go/getflashplayer" target="fpupgrade">Click here</a> to upgrade.');
+        }
+    </script>
+	</div>
+
+	<script type="text/javascript">
+        var map = new GMap(document.getElementById("map"));
+        map.addControl(new GLargeMapControl());
+        map.centerAndZoom(new GPoint(139.69512732988332,35.685483113982414), 0);
+
+        function evalscript(str){
+            eval(str);
+        }
+	</script>
+
+<noscript>Please enable JavaScript in order to use this application.
+</noscript>
+</body>
+</html>

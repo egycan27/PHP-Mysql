@@ -1,0 +1,6 @@
+<canvas>
+    <alert name="warning">Press OK to continue.</alert>
+    <script>
+        canvas.warning.open();
+    </script>
+</canvas>

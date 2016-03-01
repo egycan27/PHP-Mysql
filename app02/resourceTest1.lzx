@@ -1,0 +1,9 @@
+<canvas height="150">
+    <simplelayout axis="x"/>
+    <resource src="09.mp3" name="mp3"/>
+    <button text="Play"
+           onclick="LzAudio.playSound('mp3');"/>
+    <button text="Stop"
+           onclick="LzAudio.stopSound('mp3');"/>
+</canvas>
+

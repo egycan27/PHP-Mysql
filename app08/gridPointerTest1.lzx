@@ -1,0 +1,90 @@
+<canvas height="300">
+    <simplelayout axis="y"/>
+    <dataset name="myData">
+        <phoneBook>
+            <contact>
+                <firstName>Linda</firstName>
+                <lastName>Carter</lastName>
+                <phone>999-789-8998</phone>
+            </contact>
+            <contact>
+                <firstName>Amy</firstName>
+                <lastName>Grant</lastName>
+                <phone>992-123-1231</phone>
+            </contact>
+        </phoneBook>
+    </dataset>
+
+    <datapointer id="dataPointer" xpath="myData:/phoneBook"/>
+
+    <grid datapath="myData:/phoneBook" contentdatapath="contact">
+        <gridtext width="100" editable="false" datapath="firstName/text()">
+            First Name
+        </gridtext>
+        <gridtext width="100" datapath="lastName/text()">
+            Last Name
+        </gridtext>
+        <gridtext width="100" datapath="phone/text()">
+            Last Name
+        </gridtext>
+        <gridcolumn width="70">
+            <view datapath="position()">
+                <button text="delete">
+                    <method event="onclick">
+                        parent.datapath.deleteNode();
+                    </method>
+                </button>
+            </view>
+        </gridcolumn>
+    </grid>
+    <button>Add New Contact
+        <method event="onclick">
+            parent.addContactWindow.setVisible(true);
+            LzFocus.setFocus(firstName);
+        </method>
+    </button>
+    <window name="addContactWindow" title="Add Contact"
+            width="180" visible="false">
+        <simplelayout axis="y"/>
+        <view>
+            <simplelayout/>
+            <text>First Name:</text>
+            <edittext id="firstName" x="30"/>
+        </view>
+        <view>
+            <simplelayout/>
+            <text>Last Name:</text>
+            <edittext id="lastName" x="30"/>
+        </view>
+        <view>
+            <simplelayout/>
+            <text>Phone:</text>
+            <edittext id="phone" x="30"/>
+        </view>
+        <view>
+            <button text="Add" x="85">
+                <method event="onclick">
+                    var newNode = new LzDataElement("contact");
+                    dataPointer.p.insertBefore(newNode, 
+                            dataPointer.p.getFirstChild())
+                    var childNode1 = new LzDataElement("firstName");
+                    childNode1.appendChild(
+                            new LzDataText(firstName.getText()));
+                    var childNode2 = new LzDataElement("lastName");
+                    childNode2.appendChild(
+                            new LzDataText(lastName.getText()));
+                    var childNode3 = new LzDataElement("phone");
+                    childNode3.appendChild(
+                            new LzDataText(phone.getText()));
+                    newNode.appendChild(childNode1);
+                    newNode.appendChild(childNode2);
+                    newNode.appendChild(childNode3);
+                    parent.parent.setVisible(false);
+                    firstName.clearText();
+                    lastName.clearText();
+                    phone.clearText();
+                </method>
+            </button>
+        </view>
+    </window>
+</canvas>

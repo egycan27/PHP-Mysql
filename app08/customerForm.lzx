@@ -1,0 +1,23 @@
+<canvas height="600" width="500">
+    <dataset name="myData" type="http" 
+            src="http:contact.jsp"/>
+    <simplelayout axis="x"/>
+    <form>
+        <submit name="contact" data="${myData}"/>
+        <text>Customer Name</text>
+        <edittext name="customerName"/>
+        <text>Email</text>
+        <edittext name="email"/>
+        <radiogroup name="customerType">
+            <radiobutton>Individual</radiobutton>
+            <radiobutton>Organization</radiobutton>
+        </radiogroup>
+        <button isdefault="true"
+                onclick="parent.contact.submit()">Submit</button>
+    </form>
+
+    <view layout="axis:y">
+        <text multiline="true" width="400" 
+                datapath="myData:/response/message/text()"/>
+    </view>
+</canvas>

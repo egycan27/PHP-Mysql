@@ -1,0 +1,23 @@
+<library>
+    <book available="true">
+        <isbn>1234567890</isbn>
+        <title>In the Middle of the Night</title>
+        <author>Jane Volvic</author>
+        <pageCount>256</pageCount>
+        <price>19.95</price>
+    </book>
+    <book available="false">
+        <isbn>1234567893</isbn>
+        <title>The Man who Never Grows Old</title>
+        <author>Anthony Hophop</author>
+        <pageCount>400</pageCount>
+        <price>29.95</price>
+    </book>
+    <book available="true">
+        <isbn>1234567894</isbn>
+        <title>No Excuses</title>
+        <author>Sherma Shaun</author>
+        <pageCount>160</pageCount>
+        <price>9.95</price>
+    </book>
+</library>   

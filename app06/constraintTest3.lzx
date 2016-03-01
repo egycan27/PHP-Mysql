@@ -1,0 +1,5 @@
+<canvas height="300" width="700">
+    <view bgcolor="red" id="display" width="200" height="200" 
+            opacity="${parent.adjuster.value/100}"/>
+    <slider x="0" y="200" name="adjuster" value="100"/>
+</canvas>

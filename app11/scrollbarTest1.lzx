@@ -1,0 +1,23 @@
+<canvas height="100">
+    <view name="main" width="100" height="100" clip="true">
+        <text multiline="true">
+            The OpenLaszlo Server is a Java servlet/JSP <br/>
+            application. This server makes LZX application <br/>
+            development process supereasy.<br/>
+            You can compile your code by directing your Web<br/>
+            browser to the OpenLaszlo server. The server <br/>
+            examines the URL and compiles the appropriate <br/>
+            source code (LZX file). <br/>
+            It then sends the generated Flash file to the <br/>
+            browser so that you can view your application. <br/>
+            If the compilation fails, the server sends a <br/>
+            compile error, telling you which line or lines <br/>
+            of code are causing the error. <br/>
+            If there is an error but compilation can continue, <br/>
+            the server generates the Flash file and sends 
+            warning messages.
+        </text>
+        <scrollbar axis="y"/>
+        <scrollbar axis="x"/>
+    </view>
+</canvas>

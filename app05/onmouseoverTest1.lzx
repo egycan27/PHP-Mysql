@@ -1,0 +1,16 @@
+<canvas>
+    <view width="280" bgcolor="silver">
+        <view bgcolor="0x123456" height="50" width="50">
+            <handler name="onmouseover"> 
+                var newX = parent.getMouse("x") + 2; 
+                // if the newX would cause the view to be clipped
+                // shift the moving view to left
+                if ((newX + this.width) > parent.width) {
+                    // shift to left
+                    newX = parent.getMouse("x") - 2; 
+                }
+                this.setX(newX);
+            </handler> 
+        </view>
+    </view>
+</canvas>

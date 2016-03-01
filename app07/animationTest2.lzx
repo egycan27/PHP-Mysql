@@ -1,0 +1,5 @@
+<canvas height="400">
+    <button x="70" width="70" text="Example">
+        <animator attribute="x" relative="true" to="70" duration="1000"/>
+    </button>
+</canvas>

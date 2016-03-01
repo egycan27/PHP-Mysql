@@ -1,0 +1,8 @@
+<canvas>
+    <button>Click here 
+        <handler name="onclick">
+            setAttribute("text", "Hello");
+            setAttribute('width', 200);
+        </handler>
+    </button>
+</canvas>

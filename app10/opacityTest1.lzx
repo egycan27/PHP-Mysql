@@ -1,0 +1,35 @@
+<canvas height="200">
+    <drawview height="200" width="600">
+        <method event="oninit">
+            this.rect(10, 10, 100, 80);
+            this.stroke();
+            this.moveTo(60, 20);
+            this.fillStyle = 0x00ee00;
+            this.fill();
+
+            this.beginPath();
+            this.globalAlpha = 1;
+            this.oval(100, 100, 75, 60);
+            this.stroke();
+            this.moveTo(150, 100);
+            this.fillStyle = 0x330000;
+            this.fill();
+
+            this.beginPath();
+            this.rect(310, 10, 100, 80);
+            this.stroke();
+            this.moveTo(60, 20);
+            this.fillStyle = 0x00ee00;
+            this.fill();
+
+            this.beginPath();
+            this.globalAlpha = 0.2;
+            this.oval(300, 100, 75, 60);
+            this.stroke();
+            this.moveTo(150, 100);
+            this.fillStyle = 0x330000;
+            this.fill();
+
+        </method>
+    </drawview>
+</canvas>

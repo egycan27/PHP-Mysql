@@ -1,0 +1,4 @@
+<canvas title="Testing Canvas" width="300" height="200"
+        bgcolor="#ddddee">
+    <text>OpenLaszlo is cool.</text>
+</canvas>

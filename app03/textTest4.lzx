@@ -1,0 +1,5 @@
+<canvas>
+    <view height="20" width="140" bgcolor="silver">
+        <inputtext password="true">secret</inputtext>
+    </view>
+</canvas>

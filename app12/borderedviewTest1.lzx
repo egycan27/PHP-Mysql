@@ -1,0 +1,5 @@
+<canvas height="200">
+    <include href="borderedview.lzx"/>
+    <borderedview bgcolor="silver" x="40" y="40" width="50" 
+            height="50"/>
+</canvas>

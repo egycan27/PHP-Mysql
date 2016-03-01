@@ -1,0 +1,12 @@
+<canvas height="200">
+    <drawview height="200" width="200">
+        <method event="oninit">
+            this.moveTo(0, 100);
+            this.lineTo(80, 100);
+            this.lineTo(100, 140);
+            this.lineTo(120, 100);
+            this.lineTo(200, 100);
+            this.stroke();
+        </method>
+    </drawview>
+</canvas>

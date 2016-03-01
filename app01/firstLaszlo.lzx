@@ -1,0 +1,10 @@
+<canvas height="150" width="200" bgcolor="yellow" >
+
+    <view width="150" height="100" bgcolor="white">
+        <button text="OpenLaszlo" 
+                onclick="setAttribute('text', 'rocks')"/>
+    </view>
+
+
+</canvas>
+

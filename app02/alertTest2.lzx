@@ -1,0 +1,16 @@
+<canvas>
+    <alert name="warning" button1="Yes" button2="No">
+        Do you want to continue?
+        <handler name="onresult">
+            if (this.result) {
+                parent.message.setText("You said 'Yes'");
+            } else {
+                parent.message.setText("You said 'No'");
+            }
+        </handler>
+    </alert>
+    <script>
+        canvas.warning.open();
+    </script>
+    <text name="message">What do you think?</text>
+</canvas>

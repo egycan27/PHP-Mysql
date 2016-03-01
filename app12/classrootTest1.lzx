@@ -1,0 +1,22 @@
+<canvas >
+    <class name="root">
+        <simplelayout axis="x"/>
+        <view height="100" width="100">
+            <button x="20" y="20" text="Red">
+                <handler name="onclick">
+                    classroot.setAttribute("bgcolor", "0xff0000");
+                </handler>
+            </button>
+        </view>
+        <view height="100" width="100">
+            <button x="20" y="20" text="Blue">
+                <handler name="onclick">
+                    classroot.setAttribute("bgcolor", "0x0000ff");
+                </handler>
+            </button>
+        </view>
+
+    </class>
+
+    <root bgcolor="#cecece" height="400" width="400"/>
+</canvas>

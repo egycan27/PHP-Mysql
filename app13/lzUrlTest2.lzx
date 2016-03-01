@@ -1,0 +1,14 @@
+<canvas debug="true">
+    <script>
+        var url = LzBrowser.getLoadURLAsLzURL();
+        if (url.host != "myHost.com") {
+            LzBrowser.loadURL("http://www.mydomain.com/error.html");
+        }
+        Debug.write("protocol:" + url.protocol);
+        Debug.write("host:" + url.host);
+        Debug.write("port:" + url.port);
+        Debug.write("path:" + url.path);
+        Debug.write("file:" + url.file);
+        Debug.write("query:" + url.query);
+    </script>
+</canvas>

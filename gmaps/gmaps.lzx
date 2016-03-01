@@ -1,0 +1,29 @@
+<library>
+    <class name="gmaps">
+        <attribute name="mapname" type="string" value="map" />
+        <method name="centerAndZoom" args="lat, lon, zoom">
+            evalscript(mapname + ".centerAndZoom(new GPoint(" + lat + "," + lon + ")," + zoom + ")");
+        </method>
+
+        <method name="centerAndZoomJp" args="lat, lon, zoom">
+            var nlat = lon - lon * 0.00010695  + lat * 0.000017464 + 0.0046017;
+            var nlon = lat - lon * 0.000046038 - lat * 0.000083043 + 0.010040;
+            evalscript(mapname + ".centerAndZoom(new GPoint(" + nlat + "," + nlon + ")," + zoom + ")");
+        </method>
+
+        <method name="openInfoWindowHtmlAtMapCenter" args="msg">
+            evalscript(mapname + ".openInfoWindowHtml(" + mapname + ".getCenterLatLng(),'" + msg + "')");
+        </method>
+		
+        <method name="openInfoWindowHtmlJp" args="lat, lon, msg">
+            var nlat = lon - lon * 0.00010695  + lat * 0.000017464 + 0.0046017;
+            var nlon = lat - lon * 0.000046038 - lat * 0.000083043 + 0.010040;
+            evalscript(mapname + ".openInfoWindowHtml(new GPoint(" + nlat + "," + nlon + "),'" + msg + "')");
+        </method>
+
+        <method name="evalscript" args="script">
+            var str = "evalscript(\"" + script + "\")";
+            LzBrowser.loadJS(str);
+	</method>
+    </class>
+</library>

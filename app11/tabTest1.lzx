@@ -1,0 +1,29 @@
+<canvas height="600" width="500">
+    <form inset_top="10">
+        <tabs tabalign="right">
+            <tabpane text="Name" tabwidth="80">
+                <simplelayout axis="y"/>
+                <text>Customer Name</text>
+                <edittext name="customerName"/>
+                <text>Email</text>
+                <edittext name="email"/>
+                <radiogroup name="customerType">
+                    <radiobutton>Individual</radiobutton>
+                    <radiobutton>Organization</radiobutton>
+                </radiogroup>
+                <button>Submit</button>
+            </tabpane>
+            <tabpane text="Address" tabwidth="80">
+                <simplelayout axis="y"/>
+                <text>Address</text>
+                <edittext name="address"/>
+                <text>City</text>
+                <edittext name="city"/>
+                <text>State</text>
+                <edittext name="state"/>
+                <text>Zip Code</text>
+                <edittext name="zipcode"/>
+            </tabpane>
+        </tabs>
+    </form>
+</canvas>

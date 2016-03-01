@@ -1,0 +1,10 @@
+<canvas height="200">
+    <drawview height="200" width="200">
+        <method event="oninit">
+            this.rect(10, 10, 100, 30);
+            this.rect(10, 50, 100, 30, 5);
+            this.rect(10, 90, 100, 30, 15);
+            this.stroke();
+        </method>
+    </drawview>
+</canvas>

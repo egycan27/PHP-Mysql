@@ -1,0 +1,9 @@
+<library>
+    <class name="thickborderedview" extends="borderedview">
+        <method name="init">
+            super.init();
+            this.lineWidth = 10;
+            this.stroke();
+        </method>
+    </class>
+</library>

@@ -1,0 +1,9 @@
+<library>
+    <class name="borderedview" extends="drawview">
+        <method name="init">
+            super.init();
+            this.rect(0, 0, this.width, this.height);
+            this.stroke();
+        </method>
+    </class>
+</library>

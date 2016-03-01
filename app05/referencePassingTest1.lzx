@@ -1,0 +1,17 @@
+<canvas>
+    <simplelayout axis="x"/>
+    <button id="button1" onclick="myHandler(this)">
+        Click here 
+    </button>
+    <button id="button2" onclick="myHandler(this)">
+        Click here 
+    </button>
+    <script>
+    <![CDATA[
+        function myHandler(b) {
+            b.setAttribute("text", "Hello");
+            b.setAttribute('width', 200);
+        }
+    ]]>
+    </script>
+</canvas>

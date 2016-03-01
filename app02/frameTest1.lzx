@@ -1,0 +1,12 @@
+<canvas>
+    <resource name="arrow">
+        <frame src="arrow1.gif"/>
+        <frame src="arrow2.gif"/>
+    </resource>
+
+    <view resource="arrow" 
+        onmousedown="setResourceNumber(2)"
+        onmouseup="setResourceNumber(1)"
+    />
+</canvas>
+

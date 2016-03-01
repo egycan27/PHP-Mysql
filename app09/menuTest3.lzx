@@ -1,0 +1,21 @@
+<canvas>
+    <view name="main" width="$once{parent.width}" 
+            height="$once{parent.height}" clickable="true">
+        <view name="dummy">
+            <menu x="100" name="topmenu" attach="left">
+                <menuitem text="Stop All Applications"/>
+                <menuitem text="Icon Manager">
+                    <menu>
+                        <menuitem text="Arrange Icons"/>
+                        <menuitem text="Default"/>
+                    </menu>
+                </menuitem>
+            </menu>
+        </view> 
+        <method event="onmousedown">
+            this.dummy.x = this.getMouse("x");
+            this.dummy.y = this.getMouse("y");
+            this.dummy.topmenu.setOpen(true);
+        </method>
+    </view>
+</canvas>

@@ -1,0 +1,13 @@
+<canvas>
+    <button id="button1" onclick="myHandler()">
+        Click here 
+    </button>
+    <script>
+    <![CDATA[
+        function myHandler() {
+            button1.setAttribute("text", "Hello");
+            button1.setAttribute('width', 200);
+        }
+    ]]>
+    </script>
+</canvas>

@@ -1,0 +1,10 @@
+<canvas height="400">
+    <button width="70" text="Click here">
+        <animatorgroup process="sequential">
+            <animator attribute="x" from ="0" to="300" 
+                    duration="1000"/>
+            <animator attribute="rotation" from ="0" to="90"  
+                    duration="1000"/>
+        </animatorgroup>
+    </button>
+</canvas>

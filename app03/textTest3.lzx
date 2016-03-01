@@ -1,0 +1,10 @@
+<canvas>
+    <simplelayout axis="y"/>
+    <view height="20" width="140" bgcolor="yellow" clip="true">
+        <inputtext id="nameField">[Enter your name]</inputtext>
+    </view>
+    <script>
+        var length = nameField.getText().length;
+        nameField.setSelection(0, length);
+    </script>
+</canvas>

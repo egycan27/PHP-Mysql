@@ -1,0 +1,9 @@
+<canvas height="200">
+    <drawview height="200" width="600">
+        <method event="oninit">
+            this.oval(100, 100, 75, 30);
+            this.oval(300, 100, 75);
+            this.stroke();
+        </method>
+    </drawview>
+</canvas>

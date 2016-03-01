@@ -1,0 +1,8 @@
+<canvas height="200">
+    <resizelayout axis="y" spacing="5"/> 
+    <view width="20" height="20" bgcolor="silver"/>       
+    <view width="20" height="20" bgcolor="gray"/> 
+    <view width="20" height="20" bgcolor="black"
+            options="releasetolayout"/>           
+</canvas>
+

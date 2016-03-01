@@ -1,0 +1,7 @@
+<canvas>
+    <view y="0" bgcolor="0xbbccdd" height="4"
+            width="${parent.width}">
+        <view width="4" height="4" bgcolor="red"
+            x="${parent.parent.getMouse('x')}"/>
+    </view>
+</canvas>

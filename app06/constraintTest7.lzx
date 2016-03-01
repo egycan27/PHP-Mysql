@@ -1,0 +1,8 @@
+<canvas height="300" width="700">
+    <view bgcolor="red" id="display" width="200" height="200">
+        <state apply="${adjuster.value > 50}">
+            <attribute name="opacity" value="${adjuster.value/100}"/>
+        </state>
+    </view>
+    <slider x="0" y="200" id="adjuster" value="100"/>
+</canvas>

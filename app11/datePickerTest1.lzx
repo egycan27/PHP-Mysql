@@ -1,0 +1,31 @@
+<canvas height="200"> 
+    <script>
+        var today = new Date();
+        var lastYear = new Date(today.getFullYear() - 1, 
+                today.getMonth(), today.getDate());
+        var nextYear = new Date(today.getFullYear() + 1, 
+                today.getMonth(), today.getDate());
+
+    </script>
+    <simplelayout axis="y" spacing="5"/>
+    <datepicker earliestdate="$once{lastYear}" 
+        selecteddate="$once{today}"
+        latestdate="$once{lastYear}">
+        <method event="onselecteddate">
+            if( this.selecteddate != null ) {
+                display.year.setText( this.selecteddate.getFullYear() );
+                display.month.datapath.setXPath(
+                        "datepicker_strings_en:/months/month[@index='" + 
+                        this.selecteddate.getMonth() + "']/@full" ); 
+                display.date.setText( this.selecteddate.getDate() );
+            } 
+        </method>
+    </datepicker> 
+
+    <view id="display">
+        <text name="month" resize="true" datapath="."/>
+        <text name="date" resize="true"/>
+        <text name="year" resize="true"/> 
+        <simplelayout axis="x" spacing="2"/>
+    </view>
+</canvas>

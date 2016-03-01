@@ -1,0 +1,8 @@
+<canvas>
+    <alert name="warning" button1="Yes" button2="No">
+        Do you want to continue?
+        <handler name="oninit">
+            this.open();
+        </handler>
+    </alert>
+</canvas>

@@ -1,0 +1,9 @@
+<!-- the main file -->
+<canvas height="100">
+    <?ignore you can select one of three cities ?>
+    <radiogroup>
+        <radiobutton text="New York"/>
+        <radiobutton text="Chicago"/>
+        <radiobutton text="Seattle"/>
+    </radiogroup>
+</canvas>

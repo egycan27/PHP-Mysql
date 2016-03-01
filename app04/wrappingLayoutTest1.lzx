@@ -1,0 +1,6 @@
+<canvas height="100" width="80">
+    <wrappinglayout axis="x" spacing="5"/>
+    <view width="30" height="40" bgcolor="silver"/> 
+    <view width="30" height="40" bgcolor="black"/>           
+    <view width="60" height="40" bgcolor="gray"/>           
+</canvas>

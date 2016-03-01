@@ -1,0 +1,12 @@
+<canvas width="340">
+    <simplelayout axis="y"/>
+    <dataset name="myDataset" 
+            request="true" src="http://localhost:8080/lps-4.0.x/app08/getTime.jsp"
+            ondata="splash.setAttribute('visible', false)"
+    />
+    <text name="myText" width="340" datapath="myDataset:/serverTime/text()"/>
+    <button onclick="splash.setAttribute('visible', true);myDataset.doRequest()">Update Time</button>
+    <view width="100" height="20" name="splash" bgcolor="silver">
+        <text>Loading</text>
+    </view>
+</canvas>

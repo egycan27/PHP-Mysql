@@ -1,0 +1,12 @@
+<canvas height="400">
+    <view bgcolor="red" x="98" y="98" width="4" height="4"/>
+    <view width="20" height="20" bgcolor="silver"
+            x="${ 100 + 30 * Math.cos(angle*Math.PI/180)}" 
+            y="${ 100 + 30 * Math.sin(angle*Math.PI/180)}">
+        <attribute name="angle" value="0"/>
+        <animator motion="linear" attribute="angle" from ="0"
+                to="360" duration="2000" repeat="Infinity"/>
+        <animator motion="linear" attribute="rotation" from ="0"
+                to="360" duration="2000" repeat="Infinity"/>
+    </view>
+</canvas>

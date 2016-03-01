@@ -1,0 +1,71 @@
+<canvas width="280">
+    <dataset name="myDataset" 
+          src="http://localhost:8080/lps-4.0.x/app08/checkUserName.jsp"
+    >
+    </dataset>
+    <datapointer id="mydp" xpath="myDataset:/response[1]">
+        <method event="ondata">
+            if (mydp.getNodeText() == "OK") {
+                screen1.setAttribute('visible', false);
+                screen2.setAttribute('visible', true);
+            } else {
+                userNameErrorText.setAttribute('text',
+                        'User name already taken.');
+                userNameErrorView.setAttribute('visible', true);
+            }
+        </method>
+    </datapointer>
+
+    <view id="screen1" x="10" y="20">
+        <simplelayout axis="y"/>
+        <view>
+            <text x="10">User Name:</text>
+            <edittext id="userName" x="140"/>
+        </view>
+        <view visible="false" id="userNameErrorView">
+            <text fgcolor="red" resize="true" id="userNameErrorText" 
+                    x="10"/>
+        </view>
+        <view>
+            <text x="10">Password:</text>
+            <edittext id="password" password="true" x="140"/>
+        </view>
+        <view visible="false" id="passwordErrorView">
+            <text fgcolor="red" resize="true" id="passwordErrorText" 
+                    x="10"/>
+        </view>
+        <view align="right">
+            <button onclick="validateUser()">Register
+                <method name="validateUser">
+                    var validated = true;
+                    userNameErrorView.setAttribute('visible', 
+                            false);
+                    passwordErrorView.setAttribute('visible', 
+                            false);
+                    if (userName.text.length &lt; 4) {
+                        userNameErrorText.setAttribute('text',
+                        'User name must be at least 4 characters.');
+                        userNameErrorView.setAttribute('visible', 
+                                true);
+                        validated = false;
+                    }
+                    if (password.text.length &lt; 4) {
+                        passwordErrorText.setAttribute('text',
+                        'Password must be at least 4 characters.');
+                        passwordErrorView.setAttribute('visible', 
+                                true);
+                        validated = false;
+                    }
+                    if (validated) {
+                        myDataset.setQueryString("userName=" + 
+                                userName.text);
+                        myDataset.doRequest();
+                    }
+                </method>
+            </button>
+        </view>
+    </view> <!-- end of screen1 -->
+    <view id="screen2" visible="false" x="10" y="20">
+        <text>Thank you for registering.</text>
+    </view>
+</canvas>

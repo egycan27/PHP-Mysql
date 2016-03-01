@@ -1,0 +1,6 @@
+<canvas width="200" height="200" bgcolor="silver" >
+    <view bgcolor="black" x="100" y="100" width="40" height="40"> 
+        <animator attribute="rotation" from ="0" to="360"
+                duration="3000" repeat="3"/>
+    </view>
+</canvas>

@@ -1,0 +1,6 @@
+<canvas>
+    <view y="100" x="100" width="70" height="50" bgcolor="gray">
+        <animator attribute="x" to="200" duration="3000"/>
+        <animator attribute="rotation" to="360" duration="3000"/>
+    </view>
+</canvas>

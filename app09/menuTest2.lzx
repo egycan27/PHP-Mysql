@@ -1,0 +1,19 @@
+<canvas>
+    <menubar>
+        <menu text="File" width="100">
+            <menuitem text="New"/>
+            <menuitem text="Open">
+                <menu>
+                    <menuitem text="From File"/>
+                    <menuitem text="From the Internet"/>
+                </menu>
+            </menuitem>
+            <menuitem text="Save"/>
+            <menuseparator/> 
+            <menuitem text="Exit"/> 
+        </menu> 
+        <menu text="Help" width="100">
+            <menuitem text="About"/> 
+        </menu>
+    </menubar>
+</canvas>

@@ -1,0 +1,21 @@
+<canvas height="300">
+    <view width="200">
+        <simplelayout axis="y"/>
+        <button>Help
+            <method event="onclick">
+                if (parent.helpView.height==0) {
+                    parent.helpView.animate("height",70, 300, false);
+                } else {
+                    parent.helpView.animate("height",0, 300, false);
+                }
+            </method>
+        </button>
+        <view name="helpView" bgcolor="#dddddd" height="0" 
+                width="${parent.width}" clip="true" >
+            <text y="10" multiline="true" width="${parent.width}">
+                You can use the animator and animatorgroup tags to 
+                create animation
+            </text>
+        </view>
+    </view>
+</canvas>

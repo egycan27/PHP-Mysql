@@ -1,0 +1,6 @@
+<canvas height="200">
+    <view layout="class:simplelayout;axis:x;spacing:50">
+        <button>OK</button>
+        <button>Cancel</button>
+    </view>
+</canvas>

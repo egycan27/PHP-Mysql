@@ -1,0 +1,21 @@
+<canvas height="300" width="500">
+    <dataset name="myData" src="library.xml"/>
+    <grid datapath="myData:/library" contentdatapath="book">
+        <gridtext width="100" editable="false" datapath="isbn/text()">
+            ISBN
+        </gridtext>
+        <gridtext width="200" datapath="title/text()">
+            Title
+        </gridtext>
+        <gridtext width="100" datapath="price/text()">
+            Price
+        </gridtext>
+        <gridcolumn width="100">
+            Available
+            <view >
+                <checkbox align="center"
+                        value="$path{'@available'}"/>
+            </view>
+        </gridcolumn>
+    </grid>
+</canvas>

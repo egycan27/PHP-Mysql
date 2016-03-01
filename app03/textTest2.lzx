@@ -1,0 +1,6 @@
+<canvas>
+    <simplelayout axis="y"/>
+    <view height="200" width="50">
+        <text width="50" multiline="true">This is a very very long piece of text</text>
+    </view>
+</canvas>

@@ -1,0 +1,4 @@
+<canvas>
+    <text x="110" text="${win.x}"/>
+    <window id="win" width="100" height="100"/>
+</canvas>

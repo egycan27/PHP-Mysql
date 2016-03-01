@@ -1,0 +1,13 @@
+<canvas height="400">
+    <button width="70" text="Click here">
+        <animatorgroup >
+            <animator attribute="x" to="300" duration="1000"/>
+            <animator attribute="rotation" to="90" duration="1000"/>
+            <animatorgroup process="simultaneous">
+                <animator attribute="x" to="0" duration="1000"/>
+                <animator attribute="rotation" to="0" 
+                        duration="1000"/>
+            </animatorgroup>
+        </animatorgroup>
+    </button>
+</canvas>

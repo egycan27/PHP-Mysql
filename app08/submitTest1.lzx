@@ -1,0 +1,7 @@
+<canvas width="340">
+    <simplelayout axis="y"/>
+    <dataset name="myDataset" 
+            request="true" src="http://localhost:8080/lps-4.0.x/app08/getTime.jsp"/>
+    <text width="340" datapath="myDataset:/serverTime/text()"/>
+    <button onclick="myDataset.doRequest()">Update Time</button>
+</canvas>

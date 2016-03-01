@@ -1,0 +1,17 @@
+<canvas height="200">
+    <drawview height="200" width="600">
+        <method event="oninit">
+            this.lineWidth = 5;
+            this.strokeStyle = 0xff00ff;
+            this.oval(100, 100, 75, 30);
+            this.stroke();
+
+            this.beginPath();
+            this.lineWidth = 10;
+            this.strokeStyle = 0xff0000;
+            this.oval(300, 100, 75);
+            this.stroke();
+
+        </method>
+    </drawview>
+</canvas>

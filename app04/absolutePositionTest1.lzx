@@ -1,0 +1,5 @@
+<canvas height="60">
+    <view x="0" y="0" bgcolor="silver" width="20" height="20"/>
+    <view x="40" y="10" bgcolor="gray" width="20" height="20"/>
+    <view x="80" y="20" bgcolor="black" width="20" height="20"/>
+</canvas>

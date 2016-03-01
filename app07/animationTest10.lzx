@@ -1,0 +1,25 @@
+<canvas height="90">
+    <view width="400" bgcolor="white">
+        <text id="t1" height="30" width="${parent.width}"
+                fgcolor="red">
+            <font face="Verdana" size="18">AJAX and Flash Development</font>
+        </text>
+    </view>
+    <view width="400" bgcolor="white">
+        <text id="t2" height="30" width="${parent.width}"
+                fgcolor="green">
+            <font face="Verdana" size="18">with OpenLaszlo</font>            
+        </text>
+        <animatorgroup process="sequential" repeat="Infinity">
+            <animator attribute="width" from ="0" to="400"
+                    duration="2000"/>
+            <animator attribute="width" from ="400" to="400" 
+                    duration="1000"/>
+            <animator attribute="width" from ="400" to="0" 
+                    duration="2000"/>
+            <animator attribute="width" from ="0" to="0" 
+                    duration="1000"/>
+        </animatorgroup>
+
+    </view>
+</canvas>

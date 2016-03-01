@@ -1,0 +1,4 @@
+<canvas>
+    <view y="0" bgcolor="0xbbccdd" height="4"
+            width="$once{parent.width}">
+</canvas>

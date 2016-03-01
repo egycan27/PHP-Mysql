@@ -1,0 +1,45 @@
+<canvas height="500">
+    <resource name="spaceShip" src="spaceShip.jpg"/>
+    <view>
+        <simplelayout axis="x" spacing="4"/>
+        <view bgcolor="silver" width="40" height="40">
+            <text>1</text>
+        </view>
+        <view bgcolor="silver" width="40" height="40">
+            <text>2</text>
+        </view>
+        <view bgcolor="silver" width="40" height="40">
+            <text>3</text>
+        </view>
+        <view bgcolor="silver" width="40" height="40">
+            <text>4</text>
+        </view>
+        <view bgcolor="silver" width="40" height="40">
+            <text>5</text>
+        </view>
+    </view>
+    <view y="400" bgcolor="black" width="${parent.width}">
+        <view id="spaceShip" resource="spaceShip" clickable="true" focusable="true">
+            <handler name="onkeydown" args="k">
+                <![CDATA[ 
+                if (k == 38) {
+                    var bullet = new LzView(canvas, 
+                            {width: 2, height: 5, 
+                            bgcolor: green, name: "bullet"});
+                    bullet.setX(this.x + 18);
+                    bullet.setY(400);
+                    bullet.animate("y", -10, 1000, false);
+
+                } else if (k == 37 && this.x > 0) {
+                    this.setX(this.x - 6);
+                } else if (k == 39 && this.x < parent.width) {
+                    this.setX(this.x + 6);
+                } 
+                ]]>
+            </handler>
+        </view>
+    </view>
+    <handler name="oninit">
+        LzFocus.setFocus(spaceShip);
+    </handler>
+</canvas>

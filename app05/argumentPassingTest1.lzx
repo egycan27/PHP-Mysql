@@ -1,0 +1,8 @@
+<canvas>
+    <button onclick="myHandler('Welcome', 300)">Click here 
+        <method name="myHandler" args="text, componentWidth">
+            setAttribute("text", text);
+            setAttribute('width', componentWidth);
+        </method>
+    </button>
+</canvas>

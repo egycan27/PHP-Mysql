@@ -1,0 +1,9 @@
+<canvas width="400">
+    <script>
+    <![CDATA[
+        var v1 = new LzView(canvas, {width: 200, height: 50, 
+                bgcolor: green, name: "myView"});
+        myView.setX(100);
+    ]]>
+    </script>
+</canvas>

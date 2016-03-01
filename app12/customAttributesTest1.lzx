@@ -1,0 +1,11 @@
+<canvas width="200">
+    <reverselayout axis="x"/>
+    <attribute name="counter" type="number" value="1"/>
+    <button text="Increment">
+        <method event="onclick">
+            var oldValue = parent.getAttribute("counter");
+            parent.setAttribute("counter", oldValue + 1);
+        </method>
+    </button>
+    <text name="my" text="${parent.counter}"/>
+</canvas>

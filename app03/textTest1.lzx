@@ -1,0 +1,6 @@
+<canvas>
+    <simplelayout axis="y"/>
+    <view height="200" width="100">
+        <text>This is an LzText object</text>
+    </view>
+</canvas>

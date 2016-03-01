@@ -1,0 +1,24 @@
+<canvas width="450" height="450">
+    <include href="../lps/components/lz/tree.lzx"/>
+    <dataset name="phoneBook">
+        <phoneBook text="Phone Book">
+            <contact text="Contact">
+                <firstName text="Linda" leaf="true"/>
+                <lastName text="Carter" leaf="true"/>
+                <phone text="999-0789-8998" leaf="true"/>
+            </contact>
+            <contact text="Contact">
+                <firstName text="Amy" leaf="true"/>
+                <lastName text="Grant" leaf="true"/>
+                <phone text="992-907-1234" leaf="true"/>
+            </contact>
+        </phoneBook>
+    </dataset>
+
+    <view width="200" height="400">
+        <tree datapath="phoneBook:/" icon="null" showroot="false">
+            <tree datapath="*" text="$path{'@text'}" open="true" 
+              icon="null" isleaf="$path{'@leaf'}"/>
+        </tree>
+    </view>
+</canvas>

@@ -1,0 +1,7 @@
+<library>
+    <radiogroup>
+        <radiobutton text="New York"/>
+        <radiobutton text="Chicago"/>
+        <radiobutton text="Seattle"/>
+    </radiogroup>
+</library>

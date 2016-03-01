@@ -1,0 +1,7 @@
+<canvas height="100">
+    <radiogroup>
+        <radiobutton text="Red"/>
+        <radiobutton text="Green"/>
+        <radiobutton text="Blue"/>
+    </radiogroup>
+</canvas>

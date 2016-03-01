@@ -1,0 +1,10 @@
+<canvas>
+    <alert id="alertBox">Your session will expire in 10 minutes</alert>
+    <method event="oninit">
+        var delegate = new LzDelegate(this, "showAlertBox");
+        LzTimer.addTimer(delegate, 3000);
+    </method>
+    <method name="showAlertBox">
+        alertBox.open();
+    </method>
+</canvas>

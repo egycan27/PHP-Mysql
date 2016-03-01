@@ -1,0 +1,4 @@
+<canvas width="300" bgcolor="#ddddee">
+    <view align="center" bgcolor="white" width="200" 
+            height="150"/>
+</canvas>

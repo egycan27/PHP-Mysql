@@ -1,0 +1,4 @@
+<canvas height="50" fontsize="12">
+    <font src="verity/verity9.ttf" name="verity"/>
+    <button font="verity" text="Register"/>
+</canvas>

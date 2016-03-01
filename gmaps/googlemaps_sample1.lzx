@@ -1,0 +1,56 @@
+<canvas>
+    <include href="gmaps.lzx/" />
+    <gmaps name="map"/>
+
+    <class name="kenitem" extends="view" focusable="true" bgcolor="#9999CC">
+        <attribute name="ken" value="$path{'ken/text()'}" />
+        <attribute name="lat" value="$path{'lat/text()'}" />
+        <attribute name="lon" value="$path{'lon/text()'}" />
+
+        <simplelayout axis="y"/>
+
+        <text text="${classroot.ken}" />
+        <view name="hint" height="0" clip="true" x="5">
+            <simplelayout axis="y"/>
+            <text text="${'lat:' + classroot.lat}" />
+            <text text=" ${'lon:' + classroot.lon}" />
+	
+            <animator name="open" attribute="height" to="30" duration="100" start="false"/>
+            <animator name="close" attribute="height" to="0" duration="50" start="false"/>
+        </view>
+		
+        <method event="onclick">
+            map.openInfoWindowHtmlJp(lat, lon, getHtmlMsg());
+        </method>
+
+        <method name="getHtmlMsg">
+        <![CDATA[
+            var msg ='<nobr>'+ this.ken +' is selected.<br />'
+                    + '<b>lat: </b>'+ this.lon +'<br />'
+                    + '<b>lon: </b>'+ this.lat +'<br /></nobr>'
+            return msg;
+        ]]>
+        </method>
+
+        <method event="onblur">
+            this.hint.close.doStart();
+            this.setBGColor(0x9999CC);
+        </method>
+
+        <method event="onfocus">
+            this.setBGColor(0xFFFFFF);
+            this.hint.open.doStart();
+        </method>
+    </class>
+
+    <dataset name="ken" src="ken.xml" />
+	
+    <view width="200" height="400" datapath="ken:/lists" clip="true">
+        <view name="contents">
+            <simplelayout axis="y" spacing="2" />
+            <kenitem datapath="items" />
+        </view>
+        <scrollbar/>
+    </view>
+	
+</canvas>

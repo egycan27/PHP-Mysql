@@ -1,0 +1,7 @@
+<canvas width="150" height="150">
+    <combobox id="genre" x="5" y="3" width="100" editable="false">
+        <textlistitem text="Jazz"/>
+        <textlistitem text="Pop"/>
+        <textlistitem text="Blues"/>
+    </combobox>
+</canvas>

@@ -1,0 +1,3 @@
+<canvas height="360" bgcolor="white">
+    <view align="center" resource="logo.swf"/>
+</canvas>

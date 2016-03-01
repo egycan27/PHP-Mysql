@@ -1,0 +1,25 @@
+<canvas fontsize="48">
+    <text id="display" width="250" bgcolor="0x99DDEE"/> 
+    <method event="oninit">
+        this.myDelegate = new LzDelegate (this, "updateClock");
+        LzTimer.addTimer( myDelegate, 1000);
+    </method>
+    <method name="updateClock"> 
+        LzTimer.addTimer(this.myDelegate, 1000);
+        var now = new Date();
+        var hour = now.getHours();
+        var minute = format(now.getMinutes());
+        var second = format(now.getSeconds()); 
+        display.setText(hour + ":" + minute + ":" + second);
+    </method>
+
+    <method name="format" args="n">
+    <![CDATA[
+        if (n < 10) {
+            return "0" + n;
+        } else {
+            return n;
+        }
+    ]]>
+    </method>
+</canvas>

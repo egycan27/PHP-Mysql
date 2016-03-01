@@ -1,0 +1,5 @@
+<canvas debug="true">
+    <script>
+        Debug.write(LzBrowser.getInitArg("firstName"));
+    </script>
+</canvas>

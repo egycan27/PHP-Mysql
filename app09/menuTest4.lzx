@@ -1,0 +1,19 @@
+<canvas>
+    <window id="win" title="Demo" width="150" height="200"/>
+    <menubar>
+        <menu text="Action" width="100">
+            <menuitem text="Minimize">
+                <method event="onselect">
+                    win.setWidth(50);
+                    win.setHeight(50);
+                </method>
+            </menuitem>
+            <menuitem text="Maximize">
+                <method event="onselect">
+                    win.setWidth(150);
+                    win.setHeight(200);
+                </method>
+            </menuitem>
+        </menu>
+    </menubar>
+</canvas>

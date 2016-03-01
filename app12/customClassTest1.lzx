@@ -1,0 +1,6 @@
+<canvas width="500" height="80">
+    <class name="square" width="80" height="${this.width}">
+    </class>
+  
+    <square bgcolor="#336699"/>
+</canvas>

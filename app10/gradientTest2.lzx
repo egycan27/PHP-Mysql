@@ -1,0 +1,18 @@
+<canvas height="200">
+    <drawview>
+        <method event="oninit">
+            // draw a rectangle;
+            this.rect(5, 5, 145, 150);
+            this.stroke();
+            // create a gradient
+            // that starts at the (5, 100) and ends at (150, 100)
+            var g = this.createLinearGradient(5, 5, 150, 55);
+            // set black as the starting color 
+            g.addColorStop(0, 0x000000);
+            // set white as the ending color
+            g.addColorStop(1, 0xffffff);
+            this.fillStyle = g;
+            this.fill();
+        </method>
+    </drawview>
+</canvas>

@@ -1,0 +1,7 @@
+<canvas height="100">
+    <include href="utils/layouts/simpleboundslayout.lzx"/>
+    <simpleboundslayout axis="x"/> 
+    <view width="60" height="60" bgcolor="silver"/>       
+    <view width="60" height="60" bgcolor="gray" rotation="30"/> 
+    <view width="60" height="60" bgcolor="black"/>           
+</canvas>

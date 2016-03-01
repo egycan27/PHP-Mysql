@@ -1,0 +1,7 @@
+<canvas height="370">
+    <view width="150" height="150" bgcolor="black">
+        <view width="100" height="100" bgcolor="white">
+            <view width="50" height="50" bgcolor="gray"/>
+        </view>
+    </view>
+</canvas>
